@@ -46,7 +46,7 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags:  ${{ secrets.DOCKER_HUB_USERNAME }}/frontend:latest
+          tags:  ${{ secrets.DOCKER_HUB_USERNAME }}/frontend1:latest
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache
 
